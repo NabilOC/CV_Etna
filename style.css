@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+	margin: auto;
+}
+#Form{
+	display: flex;
+	flex-direction: row;
+}
+p, h1,h3,i,h2, h4,ul{
+	font-family: 'Roboto',Verdana, sans-serif;
+}
+/* --------------------------------------------------------------PARTIE ASIDE ------------------------------------*/
+aside{
+	background-color: #00CED1;
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	margin-right: 50px;
+    align-content: center;
+    position: relative;
+    overflow: auto;
+}
+aside .Image{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 50%;
+	border: 4px solid;
+	border-color: #008B8B;
+    box-shadow: 3px 3px 6px black
+}
+aside header{
+	text-align: center;
+}
+aside h1{
+	background-color: #37474F;
+	text-align: center;
+	color: #00CED1;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+aside .propos{
+	align-content: center;
+	margin-right: 3.5em;
+	margin-left: 3.5em;
+	text-align: justify;
+}
+aside .coord{
+	margin-left: 3.5em;
+	text-align: justify;
+}
+aside i{
+	font-size: 40px; 		
+	border-radius: 50%;
+	border: solid #37474F;
+	padding: 0.2em;
+}
+.Image{
+	border-radius: 50%;
+}
+a{
+	color: black;
+}
+/* Positionnement du footer Loisirs */
+aside footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* ----------------------------------------------------------------PARTIE DROITE---------------------------------------*/
+body{
+	background-color: #D8D8D8;
+}
+#Droite h1{
+	font-size: 50px;
+}
+#Droite h3{
+	font-size: 30px;
+}
+
+.icon {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 35px;
+	margin-right:35px;
+	color:  #37474F;
+}
+
+section h3{
+	border-bottom: 1.5px #00CED1 solid;
+}
+.reco{
+	display: flex;
+	flex-direction: column;
+	margin-bottom:0em;
+}
+footer h3{
+	border-bottom: 1.5px #00CED1 solid;
+}
+.r2{
+	margin-left: 10em;
+}
+#Droite{
+	margin-left: 1.5em;
+	overflow: auto;
+}
+.groupe-de-r{
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 2%;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+.contact-part {
+    color: #00CED1;
+    font-size: 1.7em;
+   	background-color: #37474F;
+	text-align: center;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	font-weight: bold;
+}
+.contact-part2 {
+    color: #00CED1;
+    font-size: 1.7em;
+   	background-color: #37474F;
+	text-align: center;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	font-weight: bold;
+}
+.title-margin{
+	margin-left:0.4em;
+}
+.title-margin2{
+	margin: 0.5em;
+}
+/* Placement des éléments de formation et d'expériences pro */
+.left-element-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 5%;
+    color: #00CED1; 
+    font-size:20px;
+}
+h3 .left-element-icon{
+	font-size: 30px;
+}
+
+.element-dates {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin: 0;
+}
+
+.element-dates p {
+    margin: 0;
+}
+
+.element {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+}
+.NomEssai{
+	position: absolute;
+	width: 100%;
+	right: 100em;
+	top: 100em;
+}
+.element > h2 {
+    margin-top: 0;
+}
+/*----------------------------------------------------------------PARTIE RESPONSIVE---------------------------------------------------------*/
+@media all and (max-width: 1200px){
+	#Form{
+		width: 103%;
+		display: flex;
+		flex-direction: column;
+	}
+	p,li{
+		font-size: 29px;
+	}
+	aside{
+		width: 100%;
+	}
+	aside header{
+		background-color: #D8D8D8;
+		padding-bottom: 5em;
+
+	}
+	aside footer{
+		position: relative;
+	}
+	.left-element-icon {
+    	display: inline-block;
+    	vertical-align: top;
+    	width: 5%;
+    	color: #00CED1; 
+    	font-size:25px;
+    }
+    .formation .left-element-icon{
+       	margin: 42px;
+
+    } 
+    .fa-pencil-alt{
+    	font-size: 44px;
+    }
+    .groupe-de-r{
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 2%;
+	}
+	.r2{
+		margin-left: 0em;
+	}
+	.contact-part2{
+		margin-top: 0;
+	}
+	#Droite h1{
+		text-align: center;
+		font-size:6em;
+		position: absolute;
+		width: 100%;
+		right: 100em;
+		top: 100em;
+	}
+	aside .Image{
+	margin-top: 13em;
+	margin-bottom: 1em;
+	width: 40%;
+	border: 4px solid;
+	border-color: #008B8B;
+	box-shadow: 6px 6px 6px black;
+	}
+	aside .coord{
+		margin-left: 6.3em;
+	}
+	#Droite h3{
+		text-align: center;
+		font-size: 300%;
+		margin-right: 0.4em;
+	}
+	aside i {
+    font-size: 90px;
+    border-radius: 50%;
+    border: solid #37474F;
+    padding: 0.25em;
+    }
+    .contact-part, .contact-part2{
+    	font-size: 4em;
+    }
+
+    .formation {
+        text-align: center;
+    }
+
+    .element-dates {
+        display: block;
+        width: 100%;
+    }
+    .element-dates > p {
+        font-size: 22px;
+    }
+    .element {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    .nom-entreprise{
+    	text-align: center;
+    	font-size: 170%;
+    }
+    .r1,.r2{
+    	text-align: center;
+    	font-size: 31px;
+    }
+    .r1 > p , .r1 > p{
+    	font-size: 22px;
+    }
+    .reco i{
+    font-size: 44px;
+	}
+	#Droite{
+		margin-right: 1%;
+	}
+	.NomEssai{
+		font-size: 96px;
+		position: relative;
+		top: 0;
+		right: 0;
+	}
+
+ }
